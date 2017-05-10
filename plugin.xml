@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="icon.plugin" 
+version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+xmlns:android="http://schemas.android.com/apk/res/android">
+<name>IconPlugin</name>
+	<js-module name="IconPlugin" src="www/IconPlugin.js">
+		<clobbers target="cordova.plugins.IconPlugin" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="IconPlugin">
+				<param name="android-package" value="icon.plugin.IconPlugin" />
+			</feature>
+		</config-file>
+		
+		<config-file parent="/*" target="AndroidManifest.xml">
+		</config-file>
+		
+		<source-file src="src/android/IconPlugin.java" target-dir="src/icon/plugin/IconPlugin" />
+		
+		
+		<!--  drawable src/android/resources -->
+        <resource-file src="src/ic_notif_xxhdpi.png" target="res/drawable/ic_notif_xxhdpi.png" />
+	</platform>
+</plugin>
