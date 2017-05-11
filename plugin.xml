@@ -21,5 +21,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 		
 		<!--  drawable src/android/resources -->
         <resource-file src="src/ic_notif_xxhdpi.png" target="res/drawable/ic_notif_xxhdpi.png" />
+		<resource-file src="src/ic_notif_Installer_xxhdpi.png" target="res/drawable/ic_notif_Installer_xxhdpi.png" />
+		<resource-file src="src/ic_notif_txt_xxhdpi.png" target="res/drawable/ic_notif_txt_xxhdpi.png" />
 	</platform>
 </plugin>
